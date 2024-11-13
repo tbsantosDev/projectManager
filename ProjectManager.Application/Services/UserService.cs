@@ -25,26 +25,27 @@ namespace ProjectManager.Application.Services
             _httpContextAccessor = httpContextAccessor;
         }
 
-        public async Task<ResponseModel<UserModel>> CreateAdminUser(CreateUserDto createUserDto)
+        public async Task<ResponseModel<UserModel>> CreateAdminUser(CreateUserDto createUserAdminDto)
         {
             ResponseModel<UserModel> response = new ResponseModel<UserModel>();
 
             try
             {
-                var existingUser = await _context.Users.FirstOrDefaultAsync(e => e.Email == createUserDto.Email);
+                var existingUser = await _context.Users.FirstOrDefaultAsync(e => e.Email == createUserAdminDto.Email);
                 if (existingUser != null) {
                     response.Message = "Este e-mail já está em uso!";
                     response.Status = false;
                     return response;
                 }
 
-                var hashPassword = BCrypt.Net.BCrypt.HashPassword(createUserDto.Password);
+                var hashPassword = BCrypt.Net.BCrypt.HashPassword(createUserAdminDto.Password);
 
                 var user = new UserModel
                 {
-                    Name = createUserDto.Name,
-                    Email = createUserDto.Email,
+                    Name = createUserAdminDto.Name,
+                    Email = createUserAdminDto.Email,
                     Password = hashPassword,
+                    CreatedAt = DateTime.UtcNow,
                     Role = Models.Enums.UserEnums.Admin
                 };
 
@@ -58,19 +59,19 @@ namespace ProjectManager.Application.Services
             }
             catch (Exception ex)
             {
-                response.Message = ex.Message;
+                response.Message = ex.InnerException?.Message ?? ex.Message;
                 response.Status = false;
                 return response;
             }
         }
 
-        public async Task<ResponseModel<UserModel>> CreateMemberUser(CreateUserDto createUserDto)
+        public async Task<ResponseModel<UserModel>> CreateMemberUser(CreateUserDto createUserMemberDto)
         {
             ResponseModel<UserModel> response = new ResponseModel<UserModel>();
 
             try
             {
-                var existingUser = await _context.Users.FirstOrDefaultAsync(e => e.Email == createUserDto.Email);
+                var existingUser = await _context.Users.FirstOrDefaultAsync(e => e.Email == createUserMemberDto.Email);
                 if (existingUser != null)
                 {
                     response.Message = "Este e-mail já está em uso!";
@@ -78,17 +79,18 @@ namespace ProjectManager.Application.Services
                     return response;
                 }
 
-                var hashPassword = BCrypt.Net.BCrypt.HashPassword(createUserDto.Password);
+                var hashPassword = BCrypt.Net.BCrypt.HashPassword(createUserMemberDto.Password);
 
                 var user = new UserModel
                 {
-                    Name = createUserDto.Name,
-                    Email = createUserDto.Email,
+                    Name = createUserMemberDto.Name,
+                    Email = createUserMemberDto.Email,
                     Password = hashPassword,
+                    CreatedAt = DateTime.UtcNow,
                     Role = Models.Enums.UserEnums.Member
                 };
 
-                _context.Add(user);
+                _context.Users.Add(user);
                 await _context.SaveChangesAsync();
 
                 response.Message = "Usuário cadastrado com sucesso!";
@@ -98,7 +100,7 @@ namespace ProjectManager.Application.Services
             }
             catch (Exception ex)
             {
-                response.Message = ex.Message;
+                response.Message = ex.InnerException?.Message ?? ex.Message;
                 response.Status = false;
                 return response;
             }
@@ -111,7 +113,7 @@ namespace ProjectManager.Application.Services
             try
             {
                 var user = await _context.Users.FirstOrDefaultAsync(x => x.Id == id);
-                if (user != null) {
+                if (user == null) {
                     response.Message = "Usuário não localizado!";
                     response.Status = false;
                     return response;
@@ -140,6 +142,7 @@ namespace ProjectManager.Application.Services
             {
                 var usersAdmin = await _context.Users.Where(u => u.Role == Models.Enums.UserEnums.Admin).ToListAsync();
 
+                response.Dados = usersAdmin;
                 response.Message = "Usuários Admins coletados com sucesso!";
                 response.Status = true;
                 return response;
@@ -160,6 +163,7 @@ namespace ProjectManager.Application.Services
             {
                 var usersMembers = await _context.Users.Where(u => u.Role == Models.Enums.UserEnums.Member).ToListAsync();
 
+                response.Dados = usersMembers;
                 response.Message = "Usuários membros coletados com sucesso!";
                 response.Status = true;
                 return response;
@@ -172,7 +176,7 @@ namespace ProjectManager.Application.Services
             }
         }
 
-        public async Task<ResponseModel<UserModel>> UpdateCurrentUser(UpdateUserDto updateUserDto)
+        public async Task<ResponseModel<UserModel>> UpdateCurrentPasswordUser(UpdateUserDto updateUserDto)
         {
             ResponseModel<UserModel> response = new ResponseModel<UserModel>();
             try
@@ -187,7 +191,7 @@ namespace ProjectManager.Application.Services
 
                 var userId = int.Parse(userIdClaim.Value);
 
-                var hashPassword = BCrypt.Net.BCrypt.HashPassword(updateUserDto.Password);
+                var hashPassword = BCrypt.Net.BCrypt.HashPassword(updateUserDto.NewPassword);
 
                 var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
                 if (user == null)
@@ -195,8 +199,16 @@ namespace ProjectManager.Application.Services
                     response.Message = "Nenhum usuário localizado!";
                     return response;
                 }
+                if (BCrypt.Net.BCrypt.HashPassword(user.Password) != BCrypt.Net.BCrypt.HashPassword(updateUserDto.CurrentPassword)) {
+                    response.Message = "Senha atual não confere.";
+                    return response;
+                }
+                if (BCrypt.Net.BCrypt.HashPassword(updateUserDto.NewPassword) != BCrypt.Net.BCrypt.HashPassword(updateUserDto.ConfirmPassword))
+                {
+                    response.Message = "Valores dos campos nova senha e confirmação devem ser iguais.";
+                    return response;
+                }
 
-                user.Name = updateUserDto.Name;
                 user.Password = hashPassword;
 
                 _context.Update(user);

@@ -10,10 +10,15 @@ namespace ProjectManager.Application.DTOs.UserDTO
     public class UpdateUserDto
     {
         [Required]
-        [MaxLength(50)]
-        public string Name { get; set; }
+        public int Id { get; set; }
         [Required]
         [MaxLength(50)]
-        public string Password { get; set; }
+        public string CurrentPassword { get; set; }
+        [Required]
+        [MaxLength(50)]
+        public string NewPassword { get; set; }
+        [Required]
+        [MaxLength(50)]
+        public string ConfirmPassword { get; set; }
     }
 }

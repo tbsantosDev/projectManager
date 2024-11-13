@@ -15,7 +15,7 @@ namespace ProjectManager.Application.Interfaces
         Task<ResponseModel<List<UserModel>>> GetMembersUsers();
         Task<ResponseModel<UserModel>> CreateAdminUser(CreateUserDto createUserDto);
         Task<ResponseModel<UserModel>> CreateMemberUser(CreateUserDto createUserDto);
-        Task<ResponseModel<UserModel>> UpdateCurrentUser(UpdateUserDto updateUserDto);
+        Task<ResponseModel<UserModel>> UpdateCurrentPasswordUser(UpdateUserDto updateUserDto);
         Task<ResponseModel<UserModel>> DeleteUser(int id);
     }
 }
