@@ -1,18 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using ProjectManager.Data;
 using DotNetEnv;
+using ProjectManager.Infra.Ioc;
 
 Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING") ??
-    builder.Configuration.GetConnectionString("DefaultConnection");
-
-builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    options.UseNpgsql(connectionString);
-});
+// Usar o método de extensão para adicionar dependências
+builder.Services.AddProjectManagerDependencies(builder.Configuration);
 // Add services to the container.
 
 builder.Services.AddControllers();

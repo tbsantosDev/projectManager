@@ -1,0 +1,12 @@
+C:\Projetos em C#\ProjectManager\ProjectManager.Domain\bin\Debug\net8.0\ProjectManager.Domain.deps.json
+C:\Projetos em C#\ProjectManager\ProjectManager.Domain\bin\Debug\net8.0\ProjectManager.Domain.dll
+C:\Projetos em C#\ProjectManager\ProjectManager.Domain\bin\Debug\net8.0\ProjectManager.Domain.pdb
+C:\Projetos em C#\ProjectManager\ProjectManager.Domain\obj\Debug\net8.0\ProjectManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos em C#\ProjectManager\ProjectManager.Domain\obj\Debug\net8.0\ProjectManager.Domain.AssemblyInfoInputs.cache
+C:\Projetos em C#\ProjectManager\ProjectManager.Domain\obj\Debug\net8.0\ProjectManager.Domain.AssemblyInfo.cs
+C:\Projetos em C#\ProjectManager\ProjectManager.Domain\obj\Debug\net8.0\ProjectManager.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos em C#\ProjectManager\ProjectManager.Domain\obj\Debug\net8.0\ProjectManager.Domain.sourcelink.json
+C:\Projetos em C#\ProjectManager\ProjectManager.Domain\obj\Debug\net8.0\ProjectManager.Domain.dll
+C:\Projetos em C#\ProjectManager\ProjectManager.Domain\obj\Debug\net8.0\refint\ProjectManager.Domain.dll
+C:\Projetos em C#\ProjectManager\ProjectManager.Domain\obj\Debug\net8.0\ProjectManager.Domain.pdb
+C:\Projetos em C#\ProjectManager\ProjectManager.Domain\obj\Debug\net8.0\ref\ProjectManager.Domain.dll
