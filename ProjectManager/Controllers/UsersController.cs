@@ -36,12 +36,6 @@ namespace ProjectManager.API.Controllers
             var users = await _userInterface.CreateAdminUser(createUserAdminDto);
             return Ok(users);
         }
-        [HttpPost("CreateMemberUser")]
-        public async Task<ActionResult<ResponseModel<UserModel>>> CreateMemberUser(CreateUserDto createUserMemberDto)
-        {
-            var users = await _userInterface.CreateMemberUser(createUserMemberDto);
-            return Ok(users);
-        }
         [HttpDelete("DeleteUser/{id}")]
         public async Task<ActionResult<ResponseModel<UserModel>>> DeleteUser(int id)
         {

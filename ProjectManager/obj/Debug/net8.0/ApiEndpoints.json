@@ -1,14 +1,30 @@
 [
   {
-    "ContainingType": "ProjectManager.API.Controllers.UsersController",
-    "Method": "CreateAdminUser",
-    "RelativePath": "api/Users/CreateAdminUser",
+    "ContainingType": "ProjectManager.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "createUserAdminDto",
+        "Name": "model",
+        "Type": "ProjectManager.Domain.Models.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.AuthController",
+    "Method": "CreateMemberUser",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createUserMemberDto",
         "Type": "ProjectManager.Application.DTOs.UserDTO.CreateUserDto",
         "IsRequired": true
       }
@@ -27,14 +43,14 @@
   },
   {
     "ContainingType": "ProjectManager.API.Controllers.UsersController",
-    "Method": "CreateMemberUser",
-    "RelativePath": "api/Users/CreateMemberUser",
+    "Method": "CreateAdminUser",
+    "RelativePath": "api/Users/CreateAdminUser",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "createUserMemberDto",
+        "Name": "createUserAdminDto",
         "Type": "ProjectManager.Application.DTOs.UserDTO.CreateUserDto",
         "IsRequired": true
       }
