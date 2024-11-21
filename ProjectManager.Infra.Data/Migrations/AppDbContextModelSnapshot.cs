@@ -22,6 +22,239 @@ namespace ProjectManager.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("CommentModelUserModel", b =>
+                {
+                    b.Property<int>("CommentsId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("UsersId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("CommentsId", "UsersId");
+
+                    b.HasIndex("UsersId");
+
+                    b.ToTable("CommentModelUserModel");
+                });
+
+            modelBuilder.Entity("CostModelProjectModel", b =>
+                {
+                    b.Property<int>("CostsId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("ProjectsId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("CostsId", "ProjectsId");
+
+                    b.HasIndex("ProjectsId");
+
+                    b.ToTable("CostModelProjectModel");
+                });
+
+            modelBuilder.Entity("CostModelTeamModel", b =>
+                {
+                    b.Property<int>("CostsId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("TeamsId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("CostsId", "TeamsId");
+
+                    b.HasIndex("TeamsId");
+
+                    b.ToTable("CostModelTeamModel");
+                });
+
+            modelBuilder.Entity("ProjectManager.Domain.Models.CommentModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("TaskId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("ProjectManager.Domain.Models.CostModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int?>("ProjectId")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("TaskId")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("TeamId")
+                        .HasColumnType("integer");
+
+                    b.Property<decimal>("Value")
+                        .HasColumnType("numeric");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Costs");
+                });
+
+            modelBuilder.Entity("ProjectManager.Domain.Models.ProjectModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("EndDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("InitialDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Projects");
+                });
+
+            modelBuilder.Entity("ProjectManager.Domain.Models.TaskModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("CommentModelId")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime?>("CompletionAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int?>("CostModelId")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Priority")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("ProjectId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CommentModelId");
+
+                    b.HasIndex("CostModelId");
+
+                    b.ToTable("Tasks");
+                });
+
+            modelBuilder.Entity("ProjectManager.Domain.Models.TeamMemberModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("EntryDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Position")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("TeamId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TeamId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("TeamMembers");
+                });
+
+            modelBuilder.Entity("ProjectManager.Domain.Models.TeamModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Teams");
+                });
+
             modelBuilder.Entity("ProjectManager.Models.UserModel", b =>
                 {
                     b.Property<int>("Id")
@@ -37,6 +270,12 @@ namespace ProjectManager.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("EmailConfirmationToken")
+                        .HasColumnType("text");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
@@ -45,12 +284,173 @@ namespace ProjectManager.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("PasswordResetToken")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("PasswordResetTokenExpires")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<int>("Role")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("ProjectModelTaskModel", b =>
+                {
+                    b.Property<int>("ProjectId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("TasksId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("ProjectId", "TasksId");
+
+                    b.HasIndex("TasksId");
+
+                    b.ToTable("ProjectModelTaskModel");
+                });
+
+            modelBuilder.Entity("TaskModelUserModel", b =>
+                {
+                    b.Property<int>("TasksId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("TasksId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("TaskModelUserModel");
+                });
+
+            modelBuilder.Entity("CommentModelUserModel", b =>
+                {
+                    b.HasOne("ProjectManager.Domain.Models.CommentModel", null)
+                        .WithMany()
+                        .HasForeignKey("CommentsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectManager.Models.UserModel", null)
+                        .WithMany()
+                        .HasForeignKey("UsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("CostModelProjectModel", b =>
+                {
+                    b.HasOne("ProjectManager.Domain.Models.CostModel", null)
+                        .WithMany()
+                        .HasForeignKey("CostsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectManager.Domain.Models.ProjectModel", null)
+                        .WithMany()
+                        .HasForeignKey("ProjectsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("CostModelTeamModel", b =>
+                {
+                    b.HasOne("ProjectManager.Domain.Models.CostModel", null)
+                        .WithMany()
+                        .HasForeignKey("CostsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectManager.Domain.Models.TeamModel", null)
+                        .WithMany()
+                        .HasForeignKey("TeamsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ProjectManager.Domain.Models.TaskModel", b =>
+                {
+                    b.HasOne("ProjectManager.Domain.Models.CommentModel", null)
+                        .WithMany("Tasks")
+                        .HasForeignKey("CommentModelId");
+
+                    b.HasOne("ProjectManager.Domain.Models.CostModel", null)
+                        .WithMany("Tasks")
+                        .HasForeignKey("CostModelId");
+                });
+
+            modelBuilder.Entity("ProjectManager.Domain.Models.TeamMemberModel", b =>
+                {
+                    b.HasOne("ProjectManager.Domain.Models.TeamModel", "Team")
+                        .WithMany("TeamMembers")
+                        .HasForeignKey("TeamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectManager.Models.UserModel", "User")
+                        .WithMany("TeamMembers")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Team");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ProjectModelTaskModel", b =>
+                {
+                    b.HasOne("ProjectManager.Domain.Models.ProjectModel", null)
+                        .WithMany()
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectManager.Domain.Models.TaskModel", null)
+                        .WithMany()
+                        .HasForeignKey("TasksId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("TaskModelUserModel", b =>
+                {
+                    b.HasOne("ProjectManager.Domain.Models.TaskModel", null)
+                        .WithMany()
+                        .HasForeignKey("TasksId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectManager.Models.UserModel", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ProjectManager.Domain.Models.CommentModel", b =>
+                {
+                    b.Navigation("Tasks");
+                });
+
+            modelBuilder.Entity("ProjectManager.Domain.Models.CostModel", b =>
+                {
+                    b.Navigation("Tasks");
+                });
+
+            modelBuilder.Entity("ProjectManager.Domain.Models.TeamModel", b =>
+                {
+                    b.Navigation("TeamMembers");
+                });
+
+            modelBuilder.Entity("ProjectManager.Models.UserModel", b =>
+                {
+                    b.Navigation("TeamMembers");
                 });
 #pragma warning restore 612, 618
         }

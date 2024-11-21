@@ -20,7 +20,8 @@ namespace ProjectManager.Infra.Ioc
 
             services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseNpgsql(connectionString);
+                options.UseNpgsql(connectionString, b =>
+                    b.MigrationsAssembly("ProjectManager.Infra.Data"));
             });
 
             var jwtSecretKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY")
