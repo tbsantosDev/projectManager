@@ -10,8 +10,6 @@ namespace ProjectManager.Application.DTOs.UserDTO
     public class UpdateUserDto
     {
         [Required]
-        public int Id { get; set; }
-        [Required]
         [MaxLength(50)]
         public string CurrentPassword { get; set; }
         [Required]

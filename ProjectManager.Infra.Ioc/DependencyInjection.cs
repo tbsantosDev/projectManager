@@ -53,10 +53,6 @@ namespace ProjectManager.Infra.Ioc
 
             services.AddScoped<IUserInterface, UserService>();
 
-            // Aqui você pode adicionar outros serviços ao contêiner de injeção de dependência
-            // Exemplo:
-            // services.AddScoped<IUserService, UserService>();
-
             return services;
         }
     }

@@ -17,5 +17,7 @@ namespace ProjectManager.Application.Interfaces
         Task<ResponseModel<UserModel>> CreateMemberUser(CreateUserDto createUserDto);
         Task<ResponseModel<UserModel>> UpdateCurrentPasswordUser(UpdateUserDto updateUserDto);
         Task<ResponseModel<UserModel>> DeleteUser(int id);
+        Task<ResponseModel<string>> RequestPasswordReset(string email);
+        Task<ResponseModel<string>> ResetPassword(string email, string token, string newPassword);
     }
 }

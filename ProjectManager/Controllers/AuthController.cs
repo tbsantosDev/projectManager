@@ -77,5 +77,23 @@ namespace ProjectManager.API.Controllers
             return Ok(users);
         }
 
+        [HttpPatch("confirm-email")]
+        public async Task<IActionResult> ConfirmEmail([FromQuery] string token)
+        {
+
+            var user = await _context.Users.SingleOrDefaultAsync(u => u.EmailConfirmationToken == token);
+            if (user == null)
+            {
+                return BadRequest("Token inválido.");
+            }
+
+            user.EmailConfirmed = true;
+            user.EmailConfirmationToken = null;
+
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+
+            return Ok("E-mail confirmado com sucesso!");
+        }
     }
 }
