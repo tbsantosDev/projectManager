@@ -181,6 +181,42 @@ namespace ProjectManager.Application.Services
             }
         }
 
+        public async Task<ResponseModel<UserModel>> GetCurrentUser()
+        {
+            ResponseModel<UserModel> response = new ResponseModel<UserModel>();
+            try
+            {
+                var userIdClaim = _httpContextAccessor.HttpContext?.User.FindFirst(ClaimTypes.NameIdentifier);
+                if (userIdClaim == null)
+                {
+                    response.Message = "Usuário não encontrado.";
+                    response.Status = false;
+                    return response;
+                }
+
+                var userId = int.Parse(userIdClaim.Value);
+
+                var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+                if (user == null)
+                {
+                    response.Message = "Usuário não localizado!";
+                    return response;
+                }
+
+
+                response.Dados = user;
+                response.Message = "Dados do Usuário coletado com sucesso!";
+                return response;
+
+            }
+            catch (Exception ex)
+            {
+                response.Message = ex.Message;
+                response.Status = false;
+                return response;
+            }
+        }
+
         public async Task<ResponseModel<string>> RequestPasswordReset(string email)
         {
             var response = new ResponseModel<string>();

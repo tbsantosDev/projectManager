@@ -33,6 +33,13 @@ namespace ProjectManager.API.Controllers
             return Ok(users);
         }
         [Authorize]
+        [HttpGet("GetCurrentUser")]
+        public async Task<ActionResult<ResponseModel<List<UserModel>>>> GetCurrentUser()
+        {
+            var user = await _userInterface.GetCurrentUser();
+            return Ok(user);
+        }
+        [Authorize]
         [HttpPost("CreateAdminUser")]
         public async Task<ActionResult<ResponseModel<UserModel>>> CreateAdminUser(CreateUserDto createUserAdminDto)
         {

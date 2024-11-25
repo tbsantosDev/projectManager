@@ -58,6 +58,130 @@
     ]
   },
   {
+    "ContainingType": "ProjectManager.API.Controllers.TeamController",
+    "Method": "CreateTeam",
+    "RelativePath": "api/Team/CreateTeam",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createTeamDto",
+        "Type": "ProjectManager.Application.DTOs.TeamDTO.CreateTeamDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TeamModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TeamController",
+    "Method": "DeleteTeam",
+    "RelativePath": "api/Team/DeleteTeam/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TeamModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TeamController",
+    "Method": "GetTeam",
+    "RelativePath": "api/Team/GetTeam/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TeamModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TeamController",
+    "Method": "GetTeams",
+    "RelativePath": "api/Team/GetTeams",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[ProjectManager.Domain.Models.TeamModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TeamController",
+    "Method": "UpdateTeam",
+    "RelativePath": "api/Team/UpdateTeam",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateTeamDto",
+        "Type": "ProjectManager.Application.DTOs.TeamDTO.UpdateTeamDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TeamModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ProjectManager.API.Controllers.UsersController",
     "Method": "CreateAdminUser",
     "RelativePath": "api/Users/CreateAdminUser",
@@ -113,6 +237,26 @@
     "ContainingType": "ProjectManager.API.Controllers.UsersController",
     "Method": "GetAdminUsers",
     "RelativePath": "api/Users/GetAdminUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[ProjectManager.Models.UserModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.UsersController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/Users/GetCurrentUser",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

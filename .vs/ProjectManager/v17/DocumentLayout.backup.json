@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Projetos em C#\\ProjectManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|c:\\projetos em c#\\projectmanager\\projectmanager\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|solutionrelative:projectmanager\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|c:\\projetos em c#\\projectmanager\\projectmanager\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|solutionrelative:projectmanager\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|c:\\projetos em c#\\projectmanager\\projectmanager\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|solutionrelative:projectmanager\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\interfaces\\iuserinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\interfaces\\iuserinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D47634-A729-4BAA-949A-42AFAB0330F7}|ProjectManager.Infra.Ioc\\ProjectManager.Infra.Ioc.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33D47634-A729-4BAA-949A-42AFAB0330F7}|ProjectManager.Infra.Ioc\\ProjectManager.Infra.Ioc.csproj|solutionrelative:projectmanager.infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,58 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Infra.Ioc\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Infra.Ioc\\DependencyInjection.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Infra.Ioc\\DependencyInjection.cs",
-              "RelativeToolTip": "ProjectManager.Infra.Ioc\\DependencyInjection.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwDUAAAA+AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TeamController.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\TeamController.cs",
+              "RelativeDocumentMoniker": "ProjectManager\\Controllers\\TeamController.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\TeamController.cs",
+              "RelativeToolTip": "ProjectManager\\Controllers\\TeamController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAA5wDEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T13:26:09.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IUserInterface.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\IUserInterface.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\Interfaces\\IUserInterface.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\IUserInterface.cs",
-              "RelativeToolTip": "ProjectManager.Application\\Interfaces\\IUserInterface.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T12:59:33.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "ProjectManager\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "ProjectManager\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAkwFwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T12:53:11.087Z",
+              "WhenOpened": "2024-11-25T16:01:11.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\Services\\UserService.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\UserService.cs",
-              "RelativeToolTip": "ProjectManager.Application\\Services\\UserService.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAowKEAAAAAAAAAAAAAAA==",
+              "Title": "TeamService.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\TeamService.cs",
+              "RelativeDocumentMoniker": "ProjectManager.Application\\Services\\TeamService.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\TeamService.cs",
+              "RelativeToolTip": "ProjectManager.Application\\Services\\TeamService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwC4AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T12:09:16.24Z",
+              "WhenOpened": "2024-11-25T14:51:09.665Z",
               "EditorCaption": ""
             },
             {
@@ -91,19 +53,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "ProjectManager\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "ProjectManager\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAA9wEIAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T12:01:11.266Z",
-              "EditorCaption": ""
             }
           ]
         }

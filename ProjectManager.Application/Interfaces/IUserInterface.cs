@@ -13,6 +13,7 @@ namespace ProjectManager.Application.Interfaces
     {
         Task<ResponseModel<List<UserModel>>> GetAdminUsers();
         Task<ResponseModel<List<UserModel>>> GetMembersUsers();
+        Task<ResponseModel<UserModel>> GetCurrentUser();
         Task<ResponseModel<UserModel>> CreateAdminUser(CreateUserDto createUserDto);
         Task<ResponseModel<UserModel>> CreateMemberUser(CreateUserDto createUserDto);
         Task<ResponseModel<UserModel>> UpdateCurrentPasswordUser(UpdateUserDto updateUserDto);

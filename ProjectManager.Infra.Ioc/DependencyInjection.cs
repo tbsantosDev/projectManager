@@ -52,6 +52,7 @@ namespace ProjectManager.Infra.Ioc
             services.AddHttpContextAccessor();
 
             services.AddScoped<IUserInterface, UserService>();
+            services.AddScoped<ITeamInterface, TeamService>();
 
             return services;
         }
