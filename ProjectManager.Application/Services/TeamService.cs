@@ -76,7 +76,7 @@ namespace ProjectManager.Application.Services
             ResponseModel<TeamModel> response = new ResponseModel<TeamModel>();
             try
             {
-                var team = await _context.Teams.FirstOrDefaultAsync(t => t.Id == id);
+                var team = await _context.Teams.Include(t => t.Projects).FirstOrDefaultAsync(t => t.Id == id);
                 if (team == null)
                 {
                     response.Message = "Nenhum time localizado!";

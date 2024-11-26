@@ -152,7 +152,12 @@ namespace ProjectManager.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("integer");
 
+                    b.Property<int?>("TeamModelId")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("TeamModelId");
 
                     b.ToTable("Projects");
                 });
@@ -373,6 +378,13 @@ namespace ProjectManager.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("ProjectManager.Domain.Models.ProjectModel", b =>
+                {
+                    b.HasOne("ProjectManager.Domain.Models.TeamModel", null)
+                        .WithMany("Projects")
+                        .HasForeignKey("TeamModelId");
+                });
+
             modelBuilder.Entity("ProjectManager.Domain.Models.TaskModel", b =>
                 {
                     b.HasOne("ProjectManager.Domain.Models.CommentModel", null)
@@ -445,6 +457,8 @@ namespace ProjectManager.Migrations
 
             modelBuilder.Entity("ProjectManager.Domain.Models.TeamModel", b =>
                 {
+                    b.Navigation("Projects");
+
                     b.Navigation("TeamMembers");
                 });
 
