@@ -21,7 +21,6 @@ namespace ProjectManager.Domain.Models
         public DateTime? EndDate { get; set; }
         [Required]
         public DateTime CreatedAt { get; set; }
-        [JsonIgnore]
         public ICollection<TaskModel> Tasks { get; set; }
         [JsonIgnore]
         public ICollection<CostModel> Costs { get; set; }

@@ -306,6 +306,130 @@
     ]
   },
   {
+    "ContainingType": "ProjectManager.API.Controllers.TeamMemberController",
+    "Method": "CreateTeamMember",
+    "RelativePath": "api/TeamMember/CreateTeamMember",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createTeamMemberDto",
+        "Type": "ProjectManager.Application.DTOs.TeamMemberDTO.CreateTeamMemberDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TeamMemberModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TeamMemberController",
+    "Method": "DeleteTeamMember",
+    "RelativePath": "api/TeamMember/DeleteTeamMember",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TeamMemberModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TeamMemberController",
+    "Method": "GetAllTeamMembers",
+    "RelativePath": "api/TeamMember/GetAllTeamMembers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TeamMemberModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TeamMemberController",
+    "Method": "GetMembersByTeamId",
+    "RelativePath": "api/TeamMember/GetMembersByTeam/{teamId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teamId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TeamMemberModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TeamMemberController",
+    "Method": "UpdateTeamMember",
+    "RelativePath": "api/TeamMember/UpdateTeamMember",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateTeamMemberDto",
+        "Type": "ProjectManager.Application.DTOs.TeamMemberDTO.UpdateTeamMemberDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TeamMemberModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ProjectManager.API.Controllers.UsersController",
     "Method": "CreateAdminUser",
     "RelativePath": "api/Users/CreateAdminUser",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X/9LN/re/c0=",
+  "dgSpecHash": "P1m53WPyd7E=",
   "success": true,
   "projectFilePath": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Infra.Ioc\\ProjectManager.Infra.Ioc.csproj",
   "expectedPackageFiles": [
@@ -63,6 +63,16 @@
     "C:\\Users\\ticob\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'System.Text.Encodings.Web' 4.5.0 tem uma crítico vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-ghhp-997w-qr28",
+      "libraryId": "System.Text.Encodings.Web",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oQPne/fbnSI=",
+  "dgSpecHash": "cM7qK3jkpuU=",
   "success": true,
   "projectFilePath": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\ProjectManager.Application.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,16 @@
     "C:\\Users\\ticob\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'System.Text.Encodings.Web' 4.5.0 tem uma crítico vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-ghhp-997w-qr28",
+      "libraryId": "System.Text.Encodings.Web",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
