@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Projetos em C#\\ProjectManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\interfaces\\itaskinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\interfaces\\itaskinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05C0D38D-DEDE-4902-9E1C-0921FFC30944}|ProjectManager.Domain\\ProjectManager.Domain.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.domain\\models\\projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05C0D38D-DEDE-4902-9E1C-0921FFC30944}|ProjectManager.Domain\\ProjectManager.Domain.csproj|solutionrelative:projectmanager.domain\\models\\projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\interfaces\\iteaminterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\interfaces\\iteaminterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\dtos\\taskdto\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\dtos\\taskdto\\createtaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,54 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjectModel.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Domain\\Models\\ProjectModel.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Domain\\Models\\ProjectModel.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Domain\\Models\\ProjectModel.cs",
-              "RelativeToolTip": "ProjectManager.Domain\\Models\\ProjectModel.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBYAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T22:12:11.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ITeamInterface.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\ITeamInterface.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\Interfaces\\ITeamInterface.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\ITeamInterface.cs",
-              "RelativeToolTip": "ProjectManager.Application\\Interfaces\\ITeamInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T22:06:05.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ITaskInterface.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\ITaskInterface.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\Interfaces\\ITaskInterface.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\ITaskInterface.cs",
-              "RelativeToolTip": "ProjectManager.Application\\Interfaces\\ITaskInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T22:04:45.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TaskService.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\TaskService.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\Services\\TaskService.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\TaskService.cs",
-              "RelativeToolTip": "ProjectManager.Application\\Services\\TaskService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Title": "CreateTaskDto.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\TaskDTO\\CreateTaskDto.cs",
+              "RelativeDocumentMoniker": "ProjectManager.Application\\DTOs\\TaskDTO\\CreateTaskDto.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\TaskDTO\\CreateTaskDto.cs",
+              "RelativeToolTip": "ProjectManager.Application\\DTOs\\TaskDTO\\CreateTaskDto.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T22:04:21.32Z",
+              "WhenOpened": "2024-12-27T13:45:48.308Z",
               "EditorCaption": ""
             }
           ]

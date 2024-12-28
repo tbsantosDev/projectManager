@@ -24,25 +24,25 @@ namespace ProjectManager.API.Controllers
             return Ok(projects);
         }
         [HttpGet("GetProjectById/{id}")]
-        public async Task<ActionResult<ResponseModel<List<ProjectModel>>>> GetProjectById(int id)
+        public async Task<ActionResult<ResponseModel<ProjectModel>>> GetProjectById(int id)
         {
             var project = await _projectInterface.GetProjectById(id);
             return Ok(project);
         }
         [HttpPost("CreateProject")]
-        public async Task<ActionResult<ResponseModel<List<ProjectModel>>>> CreateProject(CreateProjectDto createProjectDto)
+        public async Task<ActionResult<ResponseModel<ProjectModel>>> CreateProject(CreateProjectDto createProjectDto)
         {
             var project = await _projectInterface.CreateProject(createProjectDto);
             return Ok(project);
         }
         [HttpPut("UpdateProject")]
-        public async Task<ActionResult<ResponseModel<List<ProjectModel>>>> UpdateProject(UpdateProjectDto updateProjectDto)
+        public async Task<ActionResult<ResponseModel<ProjectModel>>> UpdateProject(UpdateProjectDto updateProjectDto)
         {
             var project = await _projectInterface.UpdateProject(updateProjectDto);
             return Ok(project);
         }
         [HttpDelete("DeleteProject/{id}")]
-        public async Task<ActionResult<ResponseModel<List<ProjectModel>>>> DeleteProject(int id)
+        public async Task<ActionResult<ResponseModel<ProjectModel>>> DeleteProject(int id)
         {
             var project = await _projectInterface.DeleteProject(id);
             return Ok(project);

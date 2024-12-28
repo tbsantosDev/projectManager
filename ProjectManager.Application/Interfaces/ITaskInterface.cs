@@ -1,4 +1,5 @@
-﻿using ProjectManager.Domain.Models;
+﻿using ProjectManager.Application.DTOs.TaskDTO;
+using ProjectManager.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,8 @@ namespace ProjectManager.Application.Interfaces
     {
         Task<ResponseModel<List<TaskModel>>> GetTasks();
         Task<ResponseModel<TaskModel>> GetTasksById(int taskId);
-        Task<ResponseModel<TaskModel>> CreateTask();
-        Task<ResponseModel<TaskModel>> UpdateTask();
-        Task<ResponseModel<TaskModel>> DeleteTask();
+        Task<ResponseModel<TaskModel>> CreateTask(CreateTaskDto createTaskDto);
+        Task<ResponseModel<TaskModel>> UpdateTask(UpdateTaskDto updateTaskDto);
+        Task<ResponseModel<TaskModel>> DeleteTask(int id);
     }
 }

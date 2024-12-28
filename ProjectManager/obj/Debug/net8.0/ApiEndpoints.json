@@ -73,7 +73,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[ProjectManager.Domain.Models.ProjectModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.ProjectModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -99,7 +99,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[ProjectManager.Domain.Models.ProjectModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.ProjectModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -125,7 +125,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[ProjectManager.Domain.Models.ProjectModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.ProjectModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -171,7 +171,131 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[ProjectManager.Domain.Models.ProjectModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.ProjectModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TaskController",
+    "Method": "CreateTask",
+    "RelativePath": "api/Task/CreateTask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createTaskDto",
+        "Type": "ProjectManager.Application.DTOs.TaskDTO.CreateTaskDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TaskModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TaskController",
+    "Method": "DeleteTask",
+    "RelativePath": "api/Task/DeleteTask/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TaskModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TaskController",
+    "Method": "GetTasks",
+    "RelativePath": "api/Task/GetTasks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[ProjectManager.Domain.Models.TaskModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TaskController",
+    "Method": "GetTaskById",
+    "RelativePath": "api/Task/GetTasksById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TaskModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.TaskController",
+    "Method": "UpdateTask",
+    "RelativePath": "api/Task/UpdateTask",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateTaskDto",
+        "Type": "ProjectManager.Application.DTOs.TaskDTO.UpdateTaskDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.TaskModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
