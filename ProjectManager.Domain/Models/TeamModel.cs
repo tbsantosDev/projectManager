@@ -18,6 +18,6 @@ namespace ProjectManager.Domain.Models
         public ICollection<TeamMemberModel> TeamMembers { get; set; }
         [JsonIgnore]
         public ICollection<CostModel> Costs { get; set; }
-        public ICollection<ProjectModel> Projects { get; set; }
+        public ICollection<TaskModel> Tasks { get; set; }
     }
 }

@@ -24,11 +24,9 @@ namespace ProjectManager.Application.DTOs.TaskDTO
         public DateTime? CompletionAt { get; set; }
         //Chave estrangeira para a tabela projeto
         public int ProjectId { get; set; }
-        [JsonIgnore]
-        public ICollection<ProjectModel> Project { get; set; }
+
         //Chave estrangeira para a tabela usuario
-        public int UserId { get; set; }
-        [JsonIgnore]
-        public ICollection<UserModel> User { get; set; }
+        public int TeamId { get; set; }
+
     }
 }

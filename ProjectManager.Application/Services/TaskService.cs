@@ -31,7 +31,7 @@ namespace ProjectManager.Application.Services
                     Priority = createTaskDto.Priority,
                     CreatedAt = DateTime.UtcNow,
                     ProjectId = createTaskDto.ProjectId,
-                    UserId = createTaskDto.UserId,
+                    TeamId = createTaskDto.TeamId,
                 };
                 _context.Tasks.Add(task);
                 await _context.SaveChangesAsync();
@@ -143,7 +143,7 @@ namespace ProjectManager.Application.Services
                 task.Priority = updateTaskDto.Priority;
                 task.CompletionAt = updateTaskDto.CompletionAt;
                 task.ProjectId = updateTaskDto.ProjectId;
-                task.UserId = updateTaskDto.UserId;
+                task.TeamId = updateTaskDto.TeamId;
 
                 _context.Tasks.Update(task);
                 await _context.SaveChangesAsync();

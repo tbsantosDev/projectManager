@@ -25,6 +25,6 @@ namespace ProjectManager.Application.DTOs.TaskDTO
         //Chave estrangeira para a tabela projeto
         public int ProjectId { get; set; }
         //Chave estrangeira para a tabela usuario
-        public int UserId { get; set; }
+        public int TeamId { get; set; } 
     }
 }

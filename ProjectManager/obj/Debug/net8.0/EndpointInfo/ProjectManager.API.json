@@ -1313,7 +1313,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "userId": {
+          "teamId": {
             "type": "integer",
             "format": "int32"
           }
@@ -1575,7 +1575,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "userId": {
+          "teamId": {
             "type": "integer",
             "format": "int32"
           }
@@ -1700,10 +1700,10 @@
             "type": "string",
             "nullable": true
           },
-          "projects": {
+          "tasks": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/ProjectModel"
+              "$ref": "#/components/schemas/TaskModel"
             },
             "nullable": true
           }
@@ -1821,7 +1821,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "userId": {
+          "teamId": {
             "type": "integer",
             "format": "int32"
           }

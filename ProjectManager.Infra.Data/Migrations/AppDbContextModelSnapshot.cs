@@ -152,12 +152,7 @@ namespace ProjectManager.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("TeamModelId")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("TeamModelId");
 
                     b.ToTable("Projects");
                 });
@@ -198,7 +193,10 @@ namespace ProjectManager.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("integer");
 
-                    b.Property<int>("UserId")
+                    b.Property<int>("TeamId")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("UserModelId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
@@ -206,6 +204,12 @@ namespace ProjectManager.Migrations
                     b.HasIndex("CommentModelId");
 
                     b.HasIndex("CostModelId");
+
+                    b.HasIndex("ProjectId");
+
+                    b.HasIndex("TeamId");
+
+                    b.HasIndex("UserModelId");
 
                     b.ToTable("Tasks");
                 });
@@ -303,36 +307,6 @@ namespace ProjectManager.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("ProjectModelTaskModel", b =>
-                {
-                    b.Property<int>("ProjectId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("TasksId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("ProjectId", "TasksId");
-
-                    b.HasIndex("TasksId");
-
-                    b.ToTable("ProjectModelTaskModel");
-                });
-
-            modelBuilder.Entity("TaskModelUserModel", b =>
-                {
-                    b.Property<int>("TasksId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("TasksId", "UserId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("TaskModelUserModel");
-                });
-
             modelBuilder.Entity("CommentModelUserModel", b =>
                 {
                     b.HasOne("ProjectManager.Domain.Models.CommentModel", null)
@@ -378,13 +352,6 @@ namespace ProjectManager.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ProjectManager.Domain.Models.ProjectModel", b =>
-                {
-                    b.HasOne("ProjectManager.Domain.Models.TeamModel", null)
-                        .WithMany("Projects")
-                        .HasForeignKey("TeamModelId");
-                });
-
             modelBuilder.Entity("ProjectManager.Domain.Models.TaskModel", b =>
                 {
                     b.HasOne("ProjectManager.Domain.Models.CommentModel", null)
@@ -394,6 +361,26 @@ namespace ProjectManager.Migrations
                     b.HasOne("ProjectManager.Domain.Models.CostModel", null)
                         .WithMany("Tasks")
                         .HasForeignKey("CostModelId");
+
+                    b.HasOne("ProjectManager.Domain.Models.ProjectModel", "Project")
+                        .WithMany("Tasks")
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectManager.Domain.Models.TeamModel", "Team")
+                        .WithMany("Tasks")
+                        .HasForeignKey("TeamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjectManager.Models.UserModel", null)
+                        .WithMany("Tasks")
+                        .HasForeignKey("UserModelId");
+
+                    b.Navigation("Project");
+
+                    b.Navigation("Team");
                 });
 
             modelBuilder.Entity("ProjectManager.Domain.Models.TeamMemberModel", b =>
@@ -415,36 +402,6 @@ namespace ProjectManager.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ProjectModelTaskModel", b =>
-                {
-                    b.HasOne("ProjectManager.Domain.Models.ProjectModel", null)
-                        .WithMany()
-                        .HasForeignKey("ProjectId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ProjectManager.Domain.Models.TaskModel", null)
-                        .WithMany()
-                        .HasForeignKey("TasksId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("TaskModelUserModel", b =>
-                {
-                    b.HasOne("ProjectManager.Domain.Models.TaskModel", null)
-                        .WithMany()
-                        .HasForeignKey("TasksId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ProjectManager.Models.UserModel", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("ProjectManager.Domain.Models.CommentModel", b =>
                 {
                     b.Navigation("Tasks");
@@ -455,15 +412,22 @@ namespace ProjectManager.Migrations
                     b.Navigation("Tasks");
                 });
 
+            modelBuilder.Entity("ProjectManager.Domain.Models.ProjectModel", b =>
+                {
+                    b.Navigation("Tasks");
+                });
+
             modelBuilder.Entity("ProjectManager.Domain.Models.TeamModel", b =>
                 {
-                    b.Navigation("Projects");
+                    b.Navigation("Tasks");
 
                     b.Navigation("TeamMembers");
                 });
 
             modelBuilder.Entity("ProjectManager.Models.UserModel", b =>
                 {
+                    b.Navigation("Tasks");
+
                     b.Navigation("TeamMembers");
                 });
 #pragma warning restore 612, 618

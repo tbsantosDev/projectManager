@@ -110,7 +110,7 @@ namespace ProjectManager.Application.Services
 
             try
             {
-                var projects = await _context.Projects.ToListAsync();
+                var projects = await _context.Projects.Include(p => p.Tasks).ToListAsync();
 
                 response.Dados = projects;
                 response.Message = "Todos os projetos coletados com sucesso!";
