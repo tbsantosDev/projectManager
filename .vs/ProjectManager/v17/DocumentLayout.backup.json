@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Projetos em C#\\ProjectManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos em C#\\ProjectManager\\ProjectManager.Infra.Data\\Migrations\\20250101121941_correcaoRelacionamentoTabelaTeam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectManager.Infra.Data\\Migrations\\20250101121941_correcaoRelacionamentoTabelaTeam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|c:\\projetos em c#\\projectmanager\\projectmanager\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|solutionrelative:projectmanager\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05C0D38D-DEDE-4902-9E1C-0921FFC30944}|ProjectManager.Domain\\ProjectManager.Domain.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.domain\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05C0D38D-DEDE-4902-9E1C-0921FFC30944}|ProjectManager.Domain\\ProjectManager.Domain.csproj|solutionrelative:projectmanager.domain\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\interfaces\\icommentinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\interfaces\\icommentinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05C0D38D-DEDE-4902-9E1C-0921FFC30944}|ProjectManager.Domain\\ProjectManager.Domain.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.domain\\models\\teammodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05C0D38D-DEDE-4902-9E1C-0921FFC30944}|ProjectManager.Domain\\ProjectManager.Domain.csproj|solutionrelative:projectmanager.domain\\models\\teammodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05C0D38D-DEDE-4902-9E1C-0921FFC30944}|ProjectManager.Domain\\ProjectManager.Domain.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.domain\\models\\commentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05C0D38D-DEDE-4902-9E1C-0921FFC30944}|ProjectManager.Domain\\ProjectManager.Domain.csproj|solutionrelative:projectmanager.domain\\models\\commentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\dtos\\commentdto\\createcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\dtos\\commentdto\\createcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\dtos\\commentdto\\updatecommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\dtos\\commentdto\\updatecommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,60 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250101121941_correcaoRelacionamentoTabelaTeam.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Infra.Data\\Migrations\\20250101121941_correcaoRelacionamentoTabelaTeam.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Infra.Data\\Migrations\\20250101121941_correcaoRelacionamentoTabelaTeam.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Infra.Data\\Migrations\\20250101121941_correcaoRelacionamentoTabelaTeam.cs",
-              "RelativeToolTip": "ProjectManager.Infra.Data\\Migrations\\20250101121941_correcaoRelacionamentoTabelaTeam.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T12:19:41.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TaskModel.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Domain\\Models\\TaskModel.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Domain\\Models\\TaskModel.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Domain\\Models\\TaskModel.cs",
-              "RelativeToolTip": "ProjectManager.Domain\\Models\\TaskModel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAxwB8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T12:12:49.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TeamService.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\TeamService.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\Services\\TeamService.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\TeamService.cs",
-              "RelativeToolTip": "ProjectManager.Application\\Services\\TeamService.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAgwEkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T12:07:51.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TeamModel.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Domain\\Models\\TeamModel.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Domain\\Models\\TeamModel.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Domain\\Models\\TeamModel.cs",
-              "RelativeToolTip": "ProjectManager.Domain\\Models\\TeamModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T12:06:41.243Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -87,6 +43,84 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "ProjectManager\\Controllers\\CommentController.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "ProjectManager\\Controllers\\CommentController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T14:51:56.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateCommentDto.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CommentDTO\\UpdateCommentDto.cs",
+              "RelativeDocumentMoniker": "ProjectManager.Application\\DTOs\\CommentDTO\\UpdateCommentDto.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CommentDTO\\UpdateCommentDto.cs",
+              "RelativeToolTip": "ProjectManager.Application\\DTOs\\CommentDTO\\UpdateCommentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T14:27:34.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateCommentDto.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CommentDTO\\CreateCommentDto.cs",
+              "RelativeDocumentMoniker": "ProjectManager.Application\\DTOs\\CommentDTO\\CreateCommentDto.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CommentDTO\\CreateCommentDto.cs",
+              "RelativeToolTip": "ProjectManager.Application\\DTOs\\CommentDTO\\CreateCommentDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T14:26:12.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CommentModel.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Domain\\Models\\CommentModel.cs",
+              "RelativeDocumentMoniker": "ProjectManager.Domain\\Models\\CommentModel.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Domain\\Models\\CommentModel.cs",
+              "RelativeToolTip": "ProjectManager.Domain\\Models\\CommentModel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T14:14:25.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICommentInterface.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\ICommentInterface.cs",
+              "RelativeDocumentMoniker": "ProjectManager.Application\\Interfaces\\ICommentInterface.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\ICommentInterface.cs",
+              "RelativeToolTip": "ProjectManager.Application\\Interfaces\\ICommentInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T14:14:01.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommentService.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\CommentService.cs",
+              "RelativeDocumentMoniker": "ProjectManager.Application\\Services\\CommentService.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\CommentService.cs",
+              "RelativeToolTip": "ProjectManager.Application\\Services\\CommentService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAhwEkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T14:13:35.255Z",
+              "EditorCaption": ""
             }
           ]
         }

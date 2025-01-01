@@ -56,6 +56,7 @@ namespace ProjectManager.Infra.Ioc
             services.AddScoped<IProjectInterface, ProjectService>();
             services.AddScoped<ITeamMemberInterface, TeamMemberService>();
             services.AddScoped<ITaskInterface, TaskService>();
+            services.AddScoped<ICommentInterface, CommentService>();
 
             return services;
         }
