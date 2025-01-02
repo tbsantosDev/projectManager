@@ -136,6 +136,136 @@
     ]
   },
   {
+    "ContainingType": "ProjectManager.API.Controllers.CostController",
+    "Method": "CreateCost",
+    "RelativePath": "api/Cost/CreateCost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createCostDto",
+        "Type": "ProjectManager.Application.DTOs.CostDTO.CreateCostDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.CostModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.CostController",
+    "Method": "GetCostByProject",
+    "RelativePath": "api/Cost/GetCostByProject/{projectId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[ProjectManager.Domain.Models.CostModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.CostController",
+    "Method": "GetCostByTask",
+    "RelativePath": "api/Cost/GetCostByTask/{taskId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[ProjectManager.Domain.Models.CostModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.CostController",
+    "Method": "GetCostByTeam",
+    "RelativePath": "api/Cost/GetCostByTeam/{teamId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teamId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[ProjectManager.Domain.Models.CostModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjectManager.API.Controllers.CostController",
+    "Method": "UpdateCost",
+    "RelativePath": "api/Cost/UpdateCost",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateCostDto",
+        "Type": "ProjectManager.Application.DTOs.CostDTO.UpdateCostDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProjectManager.Domain.Models.ResponseModel\u00601[[ProjectManager.Domain.Models.CostModel, ProjectManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ProjectManager.API.Controllers.ProjectController",
     "Method": "CreateProject",
     "RelativePath": "api/Project/CreateProject",

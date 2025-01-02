@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Projetos em C#\\ProjectManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|c:\\projetos em c#\\projectmanager\\projectmanager\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|solutionrelative:projectmanager\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\services\\costservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\services\\costservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\interfaces\\icostinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\interfaces\\icostinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\interfaces\\icommentinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\interfaces\\icommentinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\dtos\\costdto\\createcostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\dtos\\costdto\\createcostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05C0D38D-DEDE-4902-9E1C-0921FFC30944}|ProjectManager.Domain\\ProjectManager.Domain.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.domain\\models\\commentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05C0D38D-DEDE-4902-9E1C-0921FFC30944}|ProjectManager.Domain\\ProjectManager.Domain.csproj|solutionrelative:projectmanager.domain\\models\\commentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\dtos\\costdto\\updatecostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\dtos\\costdto\\updatecostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\dtos\\commentdto\\createcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\dtos\\commentdto\\createcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\dtos\\commentdto\\updatecommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\dtos\\commentdto\\updatecommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|c:\\projetos em c#\\projectmanager\\projectmanager\\controllers\\costcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|solutionrelative:projectmanager\\controllers\\costcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,80 +42,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CommentController.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\CommentController.cs",
-              "RelativeDocumentMoniker": "ProjectManager\\Controllers\\CommentController.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\CommentController.cs",
-              "RelativeToolTip": "ProjectManager\\Controllers\\CommentController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T14:51:56.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateCommentDto.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CommentDTO\\UpdateCommentDto.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\DTOs\\CommentDTO\\UpdateCommentDto.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CommentDTO\\UpdateCommentDto.cs",
-              "RelativeToolTip": "ProjectManager.Application\\DTOs\\CommentDTO\\UpdateCommentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T14:27:34.094Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CreateCommentDto.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CommentDTO\\CreateCommentDto.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\DTOs\\CommentDTO\\CreateCommentDto.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CommentDTO\\CreateCommentDto.cs",
-              "RelativeToolTip": "ProjectManager.Application\\DTOs\\CommentDTO\\CreateCommentDto.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Title": "CostController.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\CostController.cs",
+              "RelativeDocumentMoniker": "ProjectManager\\Controllers\\CostController.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\CostController.cs",
+              "RelativeToolTip": "ProjectManager\\Controllers\\CostController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAgwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T14:26:12.884Z",
+              "WhenOpened": "2025-01-02T17:21:59.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CommentModel.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Domain\\Models\\CommentModel.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Domain\\Models\\CommentModel.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Domain\\Models\\CommentModel.cs",
-              "RelativeToolTip": "ProjectManager.Domain\\Models\\CommentModel.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwA8AAAAAAAAAAAAAAA==",
+              "Title": "UpdateCostDto.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CostDTO\\UpdateCostDto.cs",
+              "RelativeDocumentMoniker": "ProjectManager.Application\\DTOs\\CostDTO\\UpdateCostDto.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CostDTO\\UpdateCostDto.cs",
+              "RelativeToolTip": "ProjectManager.Application\\DTOs\\CostDTO\\UpdateCostDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T14:14:25.586Z",
+              "WhenOpened": "2025-01-02T15:48:46.698Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ICommentInterface.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\ICommentInterface.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\Interfaces\\ICommentInterface.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\ICommentInterface.cs",
-              "RelativeToolTip": "ProjectManager.Application\\Interfaces\\ICommentInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Title": "CreateCostDto.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CostDTO\\CreateCostDto.cs",
+              "RelativeDocumentMoniker": "ProjectManager.Application\\DTOs\\CostDTO\\CreateCostDto.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CostDTO\\CreateCostDto.cs",
+              "RelativeToolTip": "ProjectManager.Application\\DTOs\\CostDTO\\CreateCostDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvxAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T14:14:01.256Z",
+              "WhenOpened": "2025-01-02T15:48:17.245Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CommentService.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\CommentService.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\Services\\CommentService.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\CommentService.cs",
-              "RelativeToolTip": "ProjectManager.Application\\Services\\CommentService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAhwEkAAABEAAAAAAAAAA==",
+              "Title": "ICostInterface.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\ICostInterface.cs",
+              "RelativeDocumentMoniker": "ProjectManager.Application\\Interfaces\\ICostInterface.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\ICostInterface.cs",
+              "RelativeToolTip": "ProjectManager.Application\\Interfaces\\ICostInterface.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T14:13:35.255Z",
+              "WhenOpened": "2025-01-02T15:44:55.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CostService.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\CostService.cs",
+              "RelativeDocumentMoniker": "ProjectManager.Application\\Services\\CostService.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\CostService.cs",
+              "RelativeToolTip": "ProjectManager.Application\\Services\\CostService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAGcAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T15:44:09.741Z",
               "EditorCaption": ""
             }
           ]
