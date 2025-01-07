@@ -2327,7 +2327,6 @@
       },
       "UpdateCostDto": {
         "required": [
-          "createdAt",
           "description",
           "value"
         ],
@@ -2344,10 +2343,6 @@
           "value": {
             "type": "number",
             "format": "double"
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
           },
           "projectId": {
             "type": "integer",

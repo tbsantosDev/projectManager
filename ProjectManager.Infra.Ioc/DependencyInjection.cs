@@ -48,6 +48,24 @@ namespace ProjectManager.Infra.Ioc
                 };
             });
 
+            // Configuração do CORS
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigins", builder =>
+                {
+                    builder.WithOrigins("http://localhost:3000") // Substitua pelo domínio que você quer permitir
+                           .AllowAnyHeader()
+                           .AllowAnyMethod();
+                });
+
+                options.AddPolicy("AllowAll", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyHeader()
+                           .AllowAnyMethod();
+                });
+            });
+
             services.AddAuthorization();
             services.AddHttpContextAccessor();
 

@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Projetos em C#\\ProjectManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\services\\costservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\services\\costservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|c:\\projetos em c#\\projectmanager\\projectmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|solutionrelative:projectmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\interfaces\\icostinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\interfaces\\icostinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\dtos\\costdto\\createcostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\dtos\\costdto\\createcostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.application\\dtos\\costdto\\updatecostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38886B75-1676-4634-94FD-B9A5D4660156}|ProjectManager.Application\\ProjectManager.Application.csproj|solutionrelative:projectmanager.application\\dtos\\costdto\\updatecostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|c:\\projetos em c#\\projectmanager\\projectmanager\\controllers\\costcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DAF6DEB-02C4-40F3-9B13-8414F010372A}|ProjectManager\\ProjectManager.API.csproj|solutionrelative:projectmanager\\controllers\\costcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33D47634-A729-4BAA-949A-42AFAB0330F7}|ProjectManager.Infra.Ioc\\ProjectManager.Infra.Ioc.csproj|c:\\projetos em c#\\projectmanager\\projectmanager.infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33D47634-A729-4BAA-949A-42AFAB0330F7}|ProjectManager.Infra.Ioc\\ProjectManager.Infra.Ioc.csproj|solutionrelative:projectmanager.infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Program.cs",
+              "RelativeDocumentMoniker": "ProjectManager\\Program.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Program.cs",
+              "RelativeToolTip": "ProjectManager\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T19:10:46.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Infra.Ioc\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "ProjectManager.Infra.Ioc\\DependencyInjection.cs",
+              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Infra.Ioc\\DependencyInjection.cs",
+              "RelativeToolTip": "ProjectManager.Infra.Ioc\\DependencyInjection.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T19:03:44.469Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -39,71 +53,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CostController.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\CostController.cs",
-              "RelativeDocumentMoniker": "ProjectManager\\Controllers\\CostController.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager\\Controllers\\CostController.cs",
-              "RelativeToolTip": "ProjectManager\\Controllers\\CostController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAgwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T17:21:59.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateCostDto.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CostDTO\\UpdateCostDto.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\DTOs\\CostDTO\\UpdateCostDto.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CostDTO\\UpdateCostDto.cs",
-              "RelativeToolTip": "ProjectManager.Application\\DTOs\\CostDTO\\UpdateCostDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T15:48:46.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateCostDto.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CostDTO\\CreateCostDto.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\DTOs\\CostDTO\\CreateCostDto.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\DTOs\\CostDTO\\CreateCostDto.cs",
-              "RelativeToolTip": "ProjectManager.Application\\DTOs\\CostDTO\\CreateCostDto.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvxAAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T15:48:17.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ICostInterface.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\ICostInterface.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\Interfaces\\ICostInterface.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Interfaces\\ICostInterface.cs",
-              "RelativeToolTip": "ProjectManager.Application\\Interfaces\\ICostInterface.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T15:44:55.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CostService.cs",
-              "DocumentMoniker": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\CostService.cs",
-              "RelativeDocumentMoniker": "ProjectManager.Application\\Services\\CostService.cs",
-              "ToolTip": "C:\\Projetos em C#\\ProjectManager\\ProjectManager.Application\\Services\\CostService.cs",
-              "RelativeToolTip": "ProjectManager.Application\\Services\\CostService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAGcAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T15:44:09.741Z",
-              "EditorCaption": ""
             }
           ]
         }

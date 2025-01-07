@@ -27,6 +27,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseCors("AllowAll"); // Aplique a política que você configurou, ou "AllowAll" para desenvolvimento
+
 app.UseAuthorization();
 
 app.MapControllers();
